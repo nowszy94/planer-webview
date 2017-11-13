@@ -14,4 +14,11 @@ export class EmployeeService {
         return response.json();
     });
   }
+
+  getOne(index: number) {
+    return this.http.get('http://localhost:8090/api/employees/' + index)
+      .map((response: Response) => {
+        return response.json();
+      });
+  }
 }
