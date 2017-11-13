@@ -1,10 +1,1 @@
-<ul *ngFor="let employee of employees; let i = index">
-  <li (click)="getOne(i + 1)">{{employee.firstName}} {{employee.lastName}}</li>
-</ul>
-
-<div *ngIf="selectedEmployee">
-  <h6 style="margin: 0">{{selectedEmployee.department}}</h6>
-  <h1 style="margin-top: 0">{{selectedEmployee.firstName}} {{selectedEmployee.lastName}}</h1>
-  <h3>Email: {{selectedEmployee.email}}</h3>
-  <h3>PhoneNumber: {{selectedEmployee.phoneNumber}}</h3>
-</div>
+<router-outlet></router-outlet>
